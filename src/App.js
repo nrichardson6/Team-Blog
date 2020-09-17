@@ -9,7 +9,7 @@ import Dan from './Dan';
 import Nick from './Nick';
 import JonGames from './Jon';
 import NoMatch from './NoMatch';
-import Layne from './Layne';
+import LayneBlog from './Layne';
 import Devin from './Devin';
 import { Container } from "semantic-ui-react"; 
 
@@ -25,7 +25,7 @@ return (
         <Route exact path="/simon" component={Simon}/> 
         <Route exact path="/dan" component={Dan}/>
         <Route exact path="/nick" component={Nick}/>
-        <Route exact path="/layne" component={Layne}/>
+        <Route exact path="/layne" component={LayneBlog}/>
         <Route exact path="/jon" component={JonGames}/>
         <Route exact path="/devin" component={Devin}/>
         <Route component={NoMatch}/>
