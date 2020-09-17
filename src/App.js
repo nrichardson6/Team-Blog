@@ -10,8 +10,8 @@ import Nick from './Nick';
 import JonGames from './Jon';
 import NoMatch from './NoMatch';
 import Layne from './Layne';
-import Devin from './Devin';
-import { Container } from "semantic-ui-react"; 
+import Interest from './Devin';
+import { Container, Card } from "semantic-ui-react"; 
 
 
 
@@ -27,7 +27,7 @@ return (
         <Route exact path="/nick" component={Nick}/>
         <Route exact path="/layne" component={Layne}/>
         <Route exact path="/jon" component={JonGames}/>
-        <Route exact path="/devin" component={Devin}/>
+        <Route exact path="/devin" component={Interest}/>
         <Route component={NoMatch}/>
       </Switch>
     </Container>
