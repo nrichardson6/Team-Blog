@@ -12,9 +12,8 @@ import NoMatch from './NoMatch';
 import LayneBlog from './Layne';
 import Interest from './Devin';
 import { Container, Card } from "semantic-ui-react"; 
-import LayneBlog from './Layne';
 import Devin from './Devin';
-import { Container } from "semantic-ui-react"; 
+
 
 
 
