@@ -27,6 +27,9 @@ class Simon extends React.Component {
       cooks: filteredCook,
     })
   }
+
+
+  
   
   renderCooks = () => {
     return this.state.cooks.map((c) =>(
