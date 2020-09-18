@@ -6,6 +6,17 @@ class PostForm extends React.Component {
 
   state = { title: "", body: ""};
 
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value,
+    });
+  };
+
+  handleSubmit = (e) => {
+    
+    this.props.addNewPost(this.state);
+  }
+
+
 
 
   render() {
