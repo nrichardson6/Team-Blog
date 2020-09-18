@@ -13,14 +13,16 @@ class Simon extends React.Component {
     ]
   };
 
+  //add cook here
 
   addCook = (cook) => {
     const newCook = { ...cook, id: Math.random() + "" };
     this.setState({
       cooks: [...this.state.cooks, newCook],
     });
-  };
 
+  };
+//remove cook here
   removeCook = (cId)=>{
     const filteredCook = this.state.cooks.filter((c) => c.id !== cId);
     this.setState({
@@ -29,8 +31,10 @@ class Simon extends React.Component {
   }
 
 
+  //edit cook here
   
-  
+
+  //render cook here by pulling Cook class from Cook.js
   renderCooks = () => {
     return this.state.cooks.map((c) =>(
     <Cook key={c.id} 

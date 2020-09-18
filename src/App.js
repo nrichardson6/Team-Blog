@@ -13,6 +13,7 @@ import LayneBlog from './Layne';
 import Interest from './Devin';
 import { Container, Card } from "semantic-ui-react"; 
 import Devin from './Devin';
+import Cooks from "./FSimon/Cooks";
 
 
 
@@ -30,6 +31,7 @@ return (
         <Route exact path="/layne" component={LayneBlog}/>
         <Route exact path="/jon" component={JonGames}/>
         <Route exact path="/devin" component={Interest}/>
+        <Route exact path="/FSimon/Cooks" component={Cooks}/>
         <Route component={NoMatch}/>
       </Switch>
     </Container>

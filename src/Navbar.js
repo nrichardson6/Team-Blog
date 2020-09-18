@@ -43,6 +43,11 @@ const Navbar = () => (
           Simon
         </Menu.Item>
       </Link>
+      <Link to="/FSimon/Cooks">
+        <Menu.Item>
+          Simon Function
+        </Menu.Item>
+      </Link>
       
       <Link to="/jon">
         <MenuItem>
