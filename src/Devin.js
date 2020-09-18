@@ -16,6 +16,18 @@ class Interest extends React.Component {
     ]
   };
 
+  getId = () => {
+    return Math.floor((1 + Math.random()) * 10000)
+    .toString(16)
+    .substring(1);
+  };
+
+  addBullet = (bulletData) => {
+    const { bullets, } = this.state;
+    const bullet = { id: this.getId(), ...bulletData, };
+    this.setState({ bullets: [bullet, ...bullets], });
+  };
+
   renderBullets = () => {
     return this.state.bullets.map( bullet => <Bullet key={bullet.id} {...bullet} />)
   };
@@ -24,7 +36,7 @@ class Interest extends React.Component {
     return (
       <div>
         <Header as="h1">Devin's Interests</Header>
-        <BulletForm />
+        <BulletForm add={this.addBullet} />
         { this.renderBullets() }
       </div>
     )
