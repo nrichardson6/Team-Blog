@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, } from "semantic-ui-react";
 import LaynePost from "./LaynePost";
+import PostForm from "./LaynePostForm";
 
 
 class LayneBlog extends React.Component {
@@ -22,6 +23,10 @@ renderBlogPost = () =>{
       <div>
         <Header>Layne's Blog</Header>
         {this.renderBlogPost()}
+        <br/><br/>
+        <PostForm />
+        
+        
 
       </div>
     )
