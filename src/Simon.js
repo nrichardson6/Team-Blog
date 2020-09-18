@@ -21,16 +21,32 @@ class Simon extends React.Component {
     });
   };
 
-
+  removeCook = (cId)=>{
+    const filteredCook = this.state.cooks.filter((c) => c.id !== cId);
+    this.setState({
+      cooks: filteredCook,
+    })
+  }
   
   renderCooks = () => {
-    return this.state.cooks.map( cook => <Cook key={cook.id} {...cook} />)
+    return this.state.cooks.map((c) =>(
+    <Cook key={c.id} 
+    {...c} 
+    
+    removeCook={this.removeCook}
+    
+    />));
   };
   
+
+  //Need to ask teacher about this part. 
+
+
+
   render() {
     return (
-      <div>
-        <Header as="h1">It takes ALOT to make a Stew.....</Header>
+      <div className="cooks">
+        <Header  className="spoil" as="h1">It takes ALOT to make a Stew.....</Header>
         <CookForm add={this.addCook}/>
         { this.renderCooks() }
       </div>
