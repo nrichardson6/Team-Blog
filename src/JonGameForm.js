@@ -12,7 +12,6 @@ state = {
         })
     }
     
-// TODO #2 clear the form. 
 
 handleSubmitGameForm = (e) => {
     if (this.props.id) {
@@ -22,10 +21,12 @@ handleSubmitGameForm = (e) => {
         console.log('this.props :>> ', this.props);
         return;
 }
+
 this.props.addHandler(this.state);
-
-
-}
+this.setState({
+    title: "",
+    desc: ""
+})}
 
 handleFormInProgress = (e) => {
     console.log('Function called') 
