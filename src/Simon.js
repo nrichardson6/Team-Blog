@@ -29,8 +29,8 @@ class Simon extends React.Component {
   
   render() {
     return (
-      <div>
-        <Header as="h1">It takes ALOT to make a Stew.....</Header>
+      <div className="cooks">
+        <Header  className="spoil" as="h1">It takes ALOT to make a Stew.....</Header>
         <CookForm add={this.addCook}/>
         { this.renderCooks() }
       </div>
