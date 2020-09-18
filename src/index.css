@@ -8,7 +8,8 @@ body {
 }
 
 .cooks{
-  background: tomato;
+  background-image: url(https://lh3.googleusercontent.com/proxy/kmRPNncCW8cZYwiX1-YmXEmnBJoANbnsVroPJ5vfWgFMLYWq1a88hx3mXfh-VXoHiI-N0LhM40IAxypSNqFJlN6-pT5940-O-FBNwzQUpalebgbs11dIkwQUmqNmSNM38fhiFf7Y0ChgJVJS9hHt);
+  background-size: 1200px 800px;
   padding: 8%;
   
 }
