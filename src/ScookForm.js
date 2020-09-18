@@ -32,6 +32,8 @@ class CookForm extends React.Component {
             onChange={this.handleChange}
             value={this.state.phrase}
           />
+          <br />
+          <br />
           <Form.Button color="green">Spoil the Broth</Form.Button>
         </Form.Group>
       </Form>
